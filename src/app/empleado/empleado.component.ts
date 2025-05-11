@@ -18,6 +18,14 @@ export class EmpleadoComponent implements OnInit {
   //   return this.edad;
   // }
 
+  habilitacionCuadro = false;
+
+  usuarioRegistrado = false;
+
+  getRegistroUsuario() {
+    this.usuarioRegistrado = true;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
