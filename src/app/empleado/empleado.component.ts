@@ -11,7 +11,12 @@ export class EmpleadoComponent implements OnInit {
   nombre = 'Aarón';
   apellido = 'Pesqueira';
   edad = 45;
-  empresa = 'Google';
+  // private edad = 45;
+  // empresa = 'Google';
+
+  // getEdad() {
+  //   return this.edad;
+  // }
 
   constructor() {}
 
