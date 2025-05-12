@@ -23,7 +23,11 @@ export class EmpleadoComponent implements OnInit {
   usuarioRegistrado = false;
 
   getRegistroUsuario() {
-    this.usuarioRegistrado = true;
+    this.usuarioRegistrado = false;
+  }
+
+  setUsuarioRegistrado() {
+    alert('Usuario registrado');
   }
 
   constructor() {}

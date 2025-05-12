@@ -11,6 +11,11 @@ Introduce la empresa:
 <br />
 
 Registrado:
-<input type="checkbox" id="registro" [checked]="usuarioRegistrado" />
+<input
+  type="checkbox"
+  id="registro"
+  [checked]="usuarioRegistrado"
+  (click)="setUsuarioRegistrado()"
+/>
 
 {{ getRegistroUsuario() }}
