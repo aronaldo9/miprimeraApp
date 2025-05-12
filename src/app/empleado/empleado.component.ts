@@ -22,12 +22,22 @@ export class EmpleadoComponent implements OnInit {
 
   usuarioRegistrado = false;
 
+  textoDeRegistro = 'No hay ningún usuario registrado';
+
   getRegistroUsuario() {
     this.usuarioRegistrado = false;
   }
 
-  setUsuarioRegistrado() {
-    alert('Usuario registrado');
+  setUsuarioRegistrado(event: Event) {
+    // alert('Usuario registrado');
+
+    // this.textoDeRegistro = 'El usuario se acaba de registrar';
+
+    if ((<HTMLInputElement>event.target).value === 'si') {
+      this.textoDeRegistro = 'El usuario se acaba de registrar';
+    } else {
+      this.textoDeRegistro = 'No hay ningún usuario registrado';
+    }
   }
 
   constructor() {}
