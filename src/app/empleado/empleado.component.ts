@@ -12,7 +12,7 @@ export class EmpleadoComponent implements OnInit {
   apellido = 'Pesqueira';
   edad = 45;
   // private edad = 45;
-  // empresa = 'Google';
+  empresa = 'AaronPFDev';
 
   // getEdad() {
   //   return this.edad;
